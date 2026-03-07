@@ -58,14 +58,21 @@ Built with Node.js, deployed on Railway, powered by Kimi K2.5 via OpenRouter.
 3. Start your bot, send it any message
 4. Get your chat ID: visit `https://api.telegram.org/bot<YOUR_TOKEN>/getUpdates` — look for `"id"` inside `"chat"`
 
-### 3. Clone & Configure
+### 3. Fork & Keep It Private
+
+This repo is a public template. Since it will monitor your real wallet, **you should keep your own copy private**.
+
+1. Click **Fork** on GitHub → set visibility to **Private**
+2. Clone your fork:
 
 ```bash
-git clone https://github.com/viktor-v-i/wallet-agent
-cd wallet-agent
+git clone https://github.com/YOUR_USERNAME/wallet-accountant
+cd wallet-accountant
 npm install
 cp .env.example .env
 ```
+
+Your `.env` is gitignored and will never be committed. Your wallet address and API keys stay on your machine and in Railway — never in the repo.
 
 Fill in `.env`:
 ```
@@ -117,6 +124,6 @@ Make a small transaction from your wallet — you'll get an alert within 30 seco
 
 ## Built With Claude Code
 
-This entire project was built conversationally with Claude Code in a single session — no manual coding required. If you want to extend it, open the project in Claude Code and it will read `CLAUDE.md` for full context before making any changes.
+This entire project was built conversationally with Claude Code in a single session — no manual coding required. If you want to extend it, open your private fork in Claude Code and it will read `CLAUDE.md` for full context before making any changes.
 
 To add a new command, just ask Claude to add it — it knows the architecture, the DB schema, and all the gotchas.
