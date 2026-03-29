@@ -1,0 +1,15 @@
+{
+  "name": "bank-agent",
+  "version": "1.0.0",
+  "description": "AI-powered Nordea bank transaction accountant",
+  "main": "monitor.js",
+  "scripts": {
+    "start": "node monitor.js"
+  },
+  "type": "module",
+  "dependencies": {
+    "node-telegram-bot-api": "^0.67.0",
+    "openai": "^6.27.0",
+    "pg": "^8.20.0"
+  }
+}
